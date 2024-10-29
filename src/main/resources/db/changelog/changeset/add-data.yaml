@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-data
+      author: Nikita Timyashov
+      changes:
+        - insert:
+            tableName: wallets
+            columns:
+              - column:
+                  name: id
+                  value: '8594ee9b-8a67-4f9d-9e52-2797ff418319'
+              - column:
+                  name: balance
+                  value: '1000.00'
+        - insert:
+            tableName: wallets
+            columns:
+              - column:
+                  name: id
+                  value: '0fbe8cd8-b056-40a0-b3bd-6b2f3f3efad3'
+              - column:
+                 name: balance
+                 value: '2000'

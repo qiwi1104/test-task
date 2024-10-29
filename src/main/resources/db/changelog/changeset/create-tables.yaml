@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-tables
+      author: Nikita Timyashov
+      changes:
+        - createTable:
+            tableName: wallets
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKeyName: wallets_pkey
+                    nullable: false
+              - column:
+                  name: balance
+                  type: numeric
+                  constraints:
+                    nullable: true
