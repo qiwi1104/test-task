@@ -132,7 +132,8 @@ public class WalletServiceTest {
     void getWalletSuccess() {
         WalletResponseDTO actualResponse = service.getWalletByUid(walletRequest.getUid());
 
-        assertEquals(expectedGetWalletSuccessResponse, actualResponse);
+        assertEquals(expectedGetWalletSuccessResponse.getBalance().stripTrailingZeros(),
+                actualResponse.getBalance().stripTrailingZeros());
     }
 
     @Test

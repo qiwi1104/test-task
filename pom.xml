@@ -10,9 +10,7 @@
 	</parent>
 	<groupId>qiwi</groupId>
 	<artifactId>test-task</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>test-task</name>
-	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
